@@ -81,9 +81,11 @@ const PHASES = [
       {
         id: "phase-1-step-2",
         title: "Create an account or sign in",
-        summary: "Test the path into the app as a new or returning user.",
+        summary:
+          "Test the path into the app as a new or returning user using email sign-up/sign-in or Google login only.",
         doThis: [
-          "Use the most relevant sign-up or sign-in method available in your environment.",
+          "Do not use phone number login for this test round.",
+          "Use email sign-up, email sign-in, or Google login only.",
           "If possible, log out and sign back in once.",
           "If recovery or verification is available, try at least one of those paths.",
         ],

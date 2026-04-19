@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GatherGo UAT Banners</title>
+  <title>GatherGo Campaign Banners</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -65,6 +65,161 @@
       margin-bottom: 40px;
     }
 
+    .calendar-section {
+      width: min(100%, 1120px);
+      margin: 0 auto 52px;
+      padding: 28px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+    }
+
+    .calendar-section-head {
+      margin-bottom: 28px;
+    }
+
+    .calendar-kicker {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(15, 241, 207, 0.08);
+      border: 1px solid rgba(15, 241, 207, 0.18);
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .calendar-section h2 {
+      font-family: "Syne", sans-serif;
+      font-size: 34px;
+      line-height: 1;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .calendar-section p {
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .calendar-weeks {
+      display: grid;
+      gap: 20px;
+    }
+
+    .calendar-week {
+      padding: 22px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .calendar-week-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .calendar-week-head h3 {
+      font-family: "Syne", sans-serif;
+      font-size: 24px;
+      line-height: 1;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .calendar-week-head p,
+    .calendar-week-note {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .calendar-card {
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .calendar-day {
+      display: block;
+      margin-bottom: 8px;
+      font-family: "Syne", sans-serif;
+      font-size: 18px;
+      color: var(--white);
+    }
+
+    .calendar-date {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+    }
+
+    .calendar-time {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(15, 241, 207, 0.12);
+      color: var(--mint);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .calendar-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--white);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .calendar-card p {
+      margin-bottom: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .schedule-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
     .banners-list {
       display: flex;
       flex-direction: column;
@@ -88,6 +243,44 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-bottom: 14px;
+    }
+
+    .section-break {
+      width: min(100%, 1120px);
+      text-align: center;
+      margin: 8px auto -8px;
+    }
+
+    .section-break-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 241, 207, 0.18);
+      background: rgba(15, 241, 207, 0.08);
+      color: var(--mint);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .section-break h2 {
+      font-family: "Syne", sans-serif;
+      font-size: 34px;
+      line-height: 1;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .section-break p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 16px;
+      line-height: 1.7;
     }
 
     .banner-viewport {
@@ -250,6 +443,203 @@
       border-radius: 50%;
     }
 
+    .banner-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .banner-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .feature-grid-card {
+      padding: 22px 24px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .feature-grid-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: "Syne", sans-serif;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .feature-grid-card span {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 19px;
+      line-height: 1.45;
+    }
+
+    .quote-panel {
+      margin-top: 28px;
+      padding: 28px 30px;
+      border-radius: 34px;
+      background: linear-gradient(135deg, rgba(15, 241, 207, 0.16), rgba(255, 255, 255, 0.04));
+      border: 1px solid rgba(15, 241, 207, 0.2);
+    }
+
+    .quote-panel strong {
+      display: block;
+      margin-bottom: 10px;
+      font-family: "Syne", sans-serif;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .quote-panel span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .banner-compact {
+      padding: 64px;
+    }
+
+    .banner-compact .phase-tag {
+      font-size: 18px;
+      padding: 9px 22px;
+    }
+
+    .banner-compact .bb {
+      justify-content: flex-start;
+      padding: 36px 0 20px;
+    }
+
+    .banner-compact .b-eyebrow {
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .banner-compact .b-headline {
+      font-size: 88px;
+      margin-bottom: 28px;
+    }
+
+    .banner-compact .b-desc {
+      font-size: 23px;
+      line-height: 1.45;
+    }
+
+    .banner-compact .banner-chip-row {
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .banner-compact .banner-chip {
+      padding: 10px 15px;
+      font-size: 17px;
+    }
+
+    .banner-compact .quote-panel {
+      margin-top: 22px;
+      padding: 22px 24px;
+    }
+
+    .banner-compact .quote-panel strong {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .banner-compact .quote-panel span {
+      font-size: 19px;
+      line-height: 1.45;
+    }
+
+    .banner-compact .b-rule {
+      margin: 28px 0;
+    }
+
+    .banner-compact .bf {
+      gap: 24px;
+      align-items: flex-end;
+    }
+
+    .banner-compact .bf-label {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .banner-compact .bf-covers {
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .banner-compact .bf-date {
+      font-size: 17px;
+    }
+
+    .banner-compact .bf-cta {
+      font-size: 19px;
+      padding: 16px 30px;
+    }
+
+    .banner-dense .feature-grid {
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .banner-dense .b-eyebrow {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .banner-dense .b-headline {
+      font-size: 76px;
+      margin-bottom: 22px;
+    }
+
+    .banner-dense .b-desc {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .banner-dense .feature-grid-card {
+      padding: 18px 18px 16px;
+      border-radius: 22px;
+    }
+
+    .banner-dense .feature-grid-card strong {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .banner-dense .feature-grid-card span {
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .banner-dense .b-rule {
+      margin: 24px 0;
+    }
+
+    .banner-dense .bf-covers {
+      font-size: 18px;
+    }
+
     .dl-bar {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -336,6 +726,14 @@
         aspect-ratio: 1;
       }
 
+      .calendar-section {
+        padding: 20px 16px;
+      }
+
+      .calendar-grid {
+        grid-template-columns: 1fr;
+      }
+
       .dl-bar {
         flex-direction: column;
         align-items: stretch;
@@ -353,9 +751,9 @@
 </head>
 <body>
   <div class="page-header">
-    <div class="page-header-eyebrow">GatherGo UAT</div>
+    <div class="page-header-eyebrow">GatherGo Campaign Kit</div>
     <h1>Asset Generator</h1>
-    <p>Create, download, and share square GatherGo UAT banners with the live test link.</p>
+    <p>Create, download, and share GatherGo banners that build awareness and drive people into the live three-week UAT.</p>
   </div>
 
   <div class="page-actions">
@@ -363,7 +761,203 @@
     <button class="dl-btn" onclick="downloadAllBanners(this)">Download All Banners</button>
   </div>
 
+  <section class="calendar-section">
+    <div class="calendar-section-head">
+      <div class="calendar-kicker">Posting Calendar</div>
+      <h2>Monday to Saturday rollout plan</h2>
+      <p>These are recommended posting times in Africa/Lagos time for the three-week campaign. The schedule lives here on the page, not inside the banners, so the creative stays clean and reusable.</p>
+    </div>
+
+    <div class="calendar-weeks">
+      <div class="calendar-week">
+        <div class="calendar-week-head">
+          <div>
+            <h3>Week 1</h3>
+            <p>Monday, April 20, 2026 to Saturday, April 25, 2026</p>
+          </div>
+          <p class="calendar-week-note">Goal: spark curiosity, explain the value fast, then point people into Phase 1.</p>
+        </div>
+        <div class="calendar-grid">
+          <div class="calendar-card">
+            <span class="calendar-day">Monday</span>
+            <span class="calendar-date">April 20, 2026</span>
+            <span class="calendar-time">1:00 PM</span>
+            <strong>Lead with curiosity and make people ask what GatherGo is.</strong>
+            <p>Use the banner that introduces GatherGo as the next event app to watch.</p>
+            <a class="schedule-link" href="#banner-awareness-6">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Tuesday</span>
+            <span class="calendar-date">April 21, 2026</span>
+            <span class="calendar-time">12:30 PM</span>
+            <strong>Follow up with the clean brand-story banner.</strong>
+            <p>Use the mission-led intro so people connect the product to impact, not just features.</p>
+            <a class="schedule-link" href="#banner-about">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Wednesday</span>
+            <span class="calendar-date">April 22, 2026</span>
+            <span class="calendar-time">1:00 PM</span>
+            <strong>Show the all-in-one utility of the platform.</strong>
+            <p>Use the simple feature stack banner so the value becomes obvious at a glance.</p>
+            <a class="schedule-link" href="#banner-awareness-5">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Thursday</span>
+            <span class="calendar-date">April 23, 2026</span>
+            <span class="calendar-time">12:30 PM</span>
+            <strong>Highlight the “too many apps for one event” pain point.</strong>
+            <p>Use the problem-solution banner to frame GatherGo as the cleaner alternative.</p>
+            <a class="schedule-link" href="#banner-awareness-1">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Friday</span>
+            <span class="calendar-date">April 24, 2026</span>
+            <span class="calendar-time">10:30 AM</span>
+            <strong>Push the live UAT with the actual Phase 1 creative.</strong>
+            <p>Use the Phase 1 banner when you want sign-up and testing intent, not just awareness.</p>
+            <a class="schedule-link" href="#banner-1">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Saturday</span>
+            <span class="calendar-date">April 25, 2026</span>
+            <span class="calendar-time">11:00 AM</span>
+            <strong>Shift into the social side of GatherGo.</strong>
+            <p>Use the arrival-together banner to make the event journey feel communal and fun.</p>
+            <a class="schedule-link" href="#banner-awareness-2">Use banner below</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar-week">
+        <div class="calendar-week-head">
+          <div>
+            <h3>Week 2</h3>
+            <p>Monday, April 27, 2026 to Saturday, May 2, 2026</p>
+          </div>
+          <p class="calendar-week-note">Goal: deepen belief in the product and connect it to community, organizers, and movement.</p>
+        </div>
+        <div class="calendar-grid">
+          <div class="calendar-card">
+            <span class="calendar-day">Monday</span>
+            <span class="calendar-date">April 27, 2026</span>
+            <span class="calendar-time">1:00 PM</span>
+            <strong>Call out the pain of “link in bio” culture.</strong>
+            <p>Use the organizer-frustration banner to make the old way feel messy and outdated.</p>
+            <a class="schedule-link" href="#banner-awareness-7">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Tuesday</span>
+            <span class="calendar-date">April 28, 2026</span>
+            <span class="calendar-time">12:30 PM</span>
+            <strong>Tell the mission story around causes and communities.</strong>
+            <p>Use the impact banner to position GatherGo as bigger than a generic event tool.</p>
+            <a class="schedule-link" href="#banner-awareness-3">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Wednesday</span>
+            <span class="calendar-date">April 29, 2026</span>
+            <span class="calendar-time">1:00 PM</span>
+            <strong>Show that GatherGo covers the full event journey.</strong>
+            <p>Use the lifecycle banner to explain what happens before, during, and after an event.</p>
+            <a class="schedule-link" href="#banner-awareness-8">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Thursday</span>
+            <span class="calendar-date">April 30, 2026</span>
+            <span class="calendar-time">12:30 PM</span>
+            <strong>Give younger audiences a banner that feels social first.</strong>
+            <p>Use the group-chat concept to make GatherGo feel like a smarter way to coordinate attendance.</p>
+            <a class="schedule-link" href="#banner-awareness-9">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Friday</span>
+            <span class="calendar-date">May 1, 2026</span>
+            <span class="calendar-time">10:30 AM</span>
+            <strong>Push the Phase 2 carpool and chat story.</strong>
+            <p>Use the Phase 2 banner once you want people to think specifically about rides, chat, and notifications.</p>
+            <a class="schedule-link" href="#banner-2">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Saturday</span>
+            <span class="calendar-date">May 2, 2026</span>
+            <span class="calendar-time">11:00 AM</span>
+            <strong>Reinforce the social and community angle over the weekend.</strong>
+            <p>Use the “arrive together” creative again when people are in a more social, relaxed mindset.</p>
+            <a class="schedule-link" href="#banner-awareness-2">Use banner below</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar-week">
+        <div class="calendar-week-head">
+          <div>
+            <h3>Week 3</h3>
+            <p>Monday, May 4, 2026 to Saturday, May 9, 2026</p>
+          </div>
+          <p class="calendar-week-note">Goal: shift toward creators, trust, and the stronger “why now” story as the campaign closes.</p>
+        </div>
+        <div class="calendar-grid">
+          <div class="calendar-card">
+            <span class="calendar-day">Monday</span>
+            <span class="calendar-date">May 4, 2026</span>
+            <span class="calendar-time">1:00 PM</span>
+            <strong>Start the week with the creator invitation.</strong>
+            <p>Use the banner that speaks directly to organizers, builders, and hosts.</p>
+            <a class="schedule-link" href="#banner-awareness-4">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Tuesday</span>
+            <span class="calendar-date">May 5, 2026</span>
+            <span class="calendar-time">12:30 PM</span>
+            <strong>Bring trust and verification into the conversation.</strong>
+            <p>Use the trust banner to show that GatherGo is thinking about safer, more confident event participation.</p>
+            <a class="schedule-link" href="#banner-awareness-10">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Wednesday</span>
+            <span class="calendar-date">May 6, 2026</span>
+            <span class="calendar-time">1:00 PM</span>
+            <strong>Speak directly to the attendee decision flow.</strong>
+            <p>Use the attendee-journey banner so people instantly understand what they can do once they discover an event.</p>
+            <a class="schedule-link" href="#banner-awareness-11">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Thursday</span>
+            <span class="calendar-date">May 7, 2026</span>
+            <span class="calendar-time">12:30 PM</span>
+            <strong>Close the loop with a purpose-led, cause-first message.</strong>
+            <p>Use the cause-action banner to emphasize support, turnout, and impact together.</p>
+            <a class="schedule-link" href="#banner-awareness-12">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Friday</span>
+            <span class="calendar-date">May 8, 2026</span>
+            <span class="calendar-time">10:30 AM</span>
+            <strong>Make the final structured UAT push with Phase 3.</strong>
+            <p>Use the Phase 3 banner when the call is about event creation and KYC, not broad awareness.</p>
+            <a class="schedule-link" href="#banner-3">Use banner below</a>
+          </div>
+          <div class="calendar-card">
+            <span class="calendar-day">Saturday</span>
+            <span class="calendar-date">May 9, 2026</span>
+            <span class="calendar-time">11:00 AM</span>
+            <strong>Wrap the campaign with gratitude and momentum.</strong>
+            <p>Use the thank-you banner to show movement, appreciation, and that GatherGo is still building with people.</p>
+            <a class="schedule-link" href="#banner-thanks">Use banner below</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="banners-list">
+    <div class="section-break">
+      <div class="section-break-eyebrow">Awareness Campaign</div>
+      <h2>Creative hooks for the three-week rollout</h2>
+      <p>Use these to spark curiosity about GatherGo, not just to ask for testing. They are designed to rotate through the campaign so the message keeps feeling fresh.</p>
+    </div>
+
     <div class="banner-card">
       <div class="banner-card-label">Brand Intro · What is GatherGo?</div>
       <div class="banner-viewport">
@@ -388,7 +982,7 @@
                 <div class="bf-covers">Ticketing · Donations<br>Carpooling · Community Chat</div>
               </div>
               <div class="bf-right">
-                <div class="bf-cta">Get Involved →</div>
+                <div class="bf-cta">See it in the UAT →</div>
               </div>
             </div>
           </div>
@@ -404,6 +998,580 @@
     </div>
 
     <div class="banner-card">
+      <div class="banner-card-label">Awareness · Curiosity Hook</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact banner-dense" id="banner-awareness-1" style="background: radial-gradient(circle at top left, rgba(15,241,207,0.16), transparent 34%), linear-gradient(180deg, #01082E 0%, #07114B 100%);">
+            <div class="bwm">5</div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Curiosity</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">One event should not need five apps</div>
+              <div class="b-headline">Still using<br>5 apps for<br>one event?</div>
+              <div class="b-desc">Flyers in one place. Ticketing in another. Donations somewhere else. Carpool plans in chats. GatherGo pulls the event journey together.</div>
+              <div class="feature-grid">
+                <div class="feature-grid-card">
+                  <strong>Discover</strong>
+                  <span>Find the event and understand it fast.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Support</strong>
+                  <span>Buy tickets or give to the cause from one flow.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Go</strong>
+                  <span>Plan the ride with the people already attending.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Stay close</strong>
+                  <span>Keep the chat and updates around the event.</span>
+                </div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">Why GatherGo</div>
+                <div class="bf-covers">One place for event actions<br>Less hopping between apps</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Try the cleaner flow →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-1','gathergo-awareness-problem-solution.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-1','gathergo-awareness-problem-solution.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Social Pull</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-2" style="background: linear-gradient(135deg, #01082E 0%, #001A5C 54%, #01082E 100%);">
+            <div class="dc" style="width:420px;height:420px;background:radial-gradient(circle,rgba(15,241,207,0.18) 0%,transparent 70%);top:-60px;right:-50px;"></div>
+            <div class="dc" style="width:320px;height:320px;background:radial-gradient(circle,rgba(255,255,255,0.08) 0%,transparent 70%);bottom:160px;left:-80px;"></div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Community</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">Social travel for event people</div>
+              <div class="b-headline">Don’t just<br>attend.<br>Arrive together.</div>
+              <div class="b-desc">GatherGo turns the journey into part of the experience with carpools, request handling, notifications, and chat built around the event itself.</div>
+              <div class="banner-chip-row">
+                <div class="banner-chip">Carpool requests</div>
+                <div class="banner-chip">Live chat</div>
+                <div class="banner-chip">Ride updates</div>
+                <div class="banner-chip">Shared arrival</div>
+              </div>
+              <div class="quote-panel">
+                <strong>Why it clicks</strong>
+                <span>Instead of asking “Who is going?” in scattered chats, GatherGo helps the event community move together on purpose.</span>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">What it unlocks</div>
+                <div class="bf-covers">Movement and conversation<br>in one event flow</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">See the social flow →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-2','gathergo-awareness-arrive-together.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-2','gathergo-awareness-arrive-together.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Impact Story</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact banner-dense" id="banner-awareness-3" style="background: linear-gradient(180deg, #01082E 0%, #06175B 100%);">
+            <div class="bwm" style="font-size: 460px; right: -50px; bottom: -20px;">IMPACT</div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Impact</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">Made for movements, causes, and communities</div>
+              <div class="b-headline">Events that<br>move people<br>and missions.</div>
+              <div class="b-desc">GatherGo is built for more than turnout. It helps people support a cause, show up in person, and stay connected to the event community after the flyer is gone.</div>
+              <div class="feature-grid">
+                <div class="feature-grid-card">
+                  <strong>Tickets</strong>
+                  <span>Clear attendee actions that feel trustworthy.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Donations</strong>
+                  <span>Give support without leaving the event flow.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Trust</strong>
+                  <span>KYC and creator tooling for stronger confidence.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Community</strong>
+                  <span>Keep momentum before, during, and after the event.</span>
+                </div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">Built for</div>
+                <div class="bf-covers">Cause-led events<br>Communities with purpose</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Experience the mission →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-3','gathergo-awareness-impact.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-3','gathergo-awareness-impact.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Creator Invitation</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-4" style="background: radial-gradient(circle at bottom right, rgba(15,241,207,0.16), transparent 28%), linear-gradient(180deg, #01082E 0%, #031043 100%);">
+            <div class="dc" style="width:240px;height:240px;background:rgba(15,241,207,0.12);top:120px;right:90px;"></div>
+            <div class="dc" style="width:120px;height:120px;background:rgba(255,255,255,0.08);top:180px;right:280px;"></div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Creators</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">For organizers, creators, and community builders</div>
+              <div class="b-headline">From idea<br>to full<br>house.</div>
+              <div class="b-desc">Create your event, verify your identity, onboard attendees, and keep every important step in one platform instead of stitching it together manually.</div>
+              <div class="banner-chip-row">
+                <div class="banner-chip">Create event</div>
+                <div class="banner-chip">KYC flow</div>
+                <div class="banner-chip">Community growth</div>
+                <div class="banner-chip">One dashboard</div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">For organizers</div>
+                <div class="bf-covers">Create with confidence<br>Grow in one place</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Try creator mode →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-4','gathergo-awareness-creator.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-4','gathergo-awareness-creator.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · All-in-One Utility</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-5" style="background: linear-gradient(160deg, #01082E 0%, #041750 50%, #01082E 100%);">
+            <div class="bwm" style="font-size: 420px; right: -10px; bottom: -10px;">ONE</div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Utility</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">One event flow, not scattered links</div>
+              <div class="b-headline">Buy.<br>Give.<br>Ride.<br>Chat.</div>
+              <div class="b-desc">GatherGo pulls the key attendee actions into one experience, so people spend less time jumping between links and more time actually showing up.</div>
+              <div class="banner-chip-row">
+                <div class="banner-chip">Tickets</div>
+                <div class="banner-chip">Donations</div>
+                <div class="banner-chip">Carpools</div>
+                <div class="banner-chip">Community chat</div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">What you get</div>
+                <div class="bf-covers">Tickets, donations,<br>movement, and chat</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Test it in one place →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-5','gathergo-awareness-all-in-one.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-5','gathergo-awareness-all-in-one.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · FOMO Hook</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-6" style="background: radial-gradient(circle at center, rgba(15,241,207,0.12), transparent 38%), linear-gradient(180deg, #01082E 0%, #02113F 100%);">
+            <div class="dc" style="width:520px;height:520px;border:1px solid rgba(15,241,207,0.18);top:120px;right:-120px;"></div>
+            <div class="dc" style="width:700px;height:700px;border:1px solid rgba(255,255,255,0.08);top:30px;right:-220px;"></div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Curiosity</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">Something better is entering event culture</div>
+              <div class="b-headline">The next<br>event app<br>to watch.</div>
+              <div class="b-desc">GatherGo is shaping a more connected event experience for attendees, organizers, and communities. This is the moment to notice it early.</div>
+              <div class="quote-panel">
+                <strong>A better event rhythm</strong>
+                <span>Discover the platform bringing tickets, support, movement, and community into one event experience.</span>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">Why now</div>
+                <div class="bf-covers">Fresh event energy<br>Worth noticing early</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">See what’s live →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-6','gathergo-awareness-fomo.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-6','gathergo-awareness-fomo.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Community Pain Point</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact banner-dense" id="banner-awareness-7" style="background: linear-gradient(180deg, #01082E 0%, #081B65 100%);">
+            <div class="bwm" style="font-size: 430px; right: -30px; bottom: -24px;">LINKS</div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Organizer Pain</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">For every organizer tired of link overload</div>
+              <div class="b-headline">Your community<br>deserves better<br>than “link in bio.”</div>
+              <div class="b-desc">When every attendee action lives in a different place, momentum drops. GatherGo brings the key event moments together in a way that feels cleaner and easier to trust.</div>
+              <div class="feature-grid">
+                <div class="feature-grid-card">
+                  <strong>Less friction</strong>
+                  <span>Fewer drop-offs between interest and action.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>More clarity</strong>
+                  <span>A clearer path from discovery to attendance.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>More trust</strong>
+                  <span>Users feel the experience is connected on purpose.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>More retention</strong>
+                  <span>Community stays around the event, not just the flyer.</span>
+                </div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">What changes</div>
+                <div class="bf-covers">Less scattered links<br>More confident action</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Try the better setup →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-7','gathergo-awareness-link-in-bio.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-7','gathergo-awareness-link-in-bio.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Event Day Energy</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-8" style="background: radial-gradient(circle at top right, rgba(15,241,207,0.14), transparent 32%), linear-gradient(180deg, #01082E 0%, #031856 100%);">
+            <div class="dc" style="width:180px;height:180px;background:rgba(15,241,207,0.15);bottom:140px;left:72px;"></div>
+            <div class="dc" style="width:90px;height:90px;background:rgba(255,255,255,0.09);bottom:320px;left:250px;"></div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Lifecycle</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">Built for the full event journey</div>
+              <div class="b-headline">Before it starts.<br>While it’s live.<br>After it ends.</div>
+              <div class="b-desc">GatherGo is not just for posting an event. It supports the moments around it too: discovery, support, movement, updates, and community follow-through.</div>
+              <div class="banner-chip-row">
+                <div class="banner-chip">Discovery</div>
+                <div class="banner-chip">Support</div>
+                <div class="banner-chip">Movement</div>
+                <div class="banner-chip">Connection</div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">What it covers</div>
+                <div class="bf-covers">Before, during, after<br>the whole event journey</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Follow the full journey →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-8','gathergo-awareness-event-journey.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-8','gathergo-awareness-event-journey.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Group Chat Energy</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-9" style="background: linear-gradient(145deg, #01082E 0%, #0A1E63 100%);">
+            <div class="dc" style="width:420px;height:420px;background:radial-gradient(circle,rgba(15,241,207,0.15) 0%,transparent 70%);top:-80px;left:-80px;"></div>
+            <div class="bwm" style="font-size: 360px; right: -20px; bottom: -20px;">CHAT</div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Energy</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">For circles that plan everything in messages</div>
+              <div class="b-headline">The group chat<br>found its<br>event app.</div>
+              <div class="b-desc">GatherGo gives friend groups and communities a better place to discover the event, coordinate attendance, sort movement, and stay updated without chaos.</div>
+              <div class="banner-chip-row">
+                <div class="banner-chip">Who is going?</div>
+                <div class="banner-chip">How are we moving?</div>
+                <div class="banner-chip">What changed?</div>
+                <div class="banner-chip">All in one flow</div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">For social groups</div>
+                <div class="bf-covers">Plans, rides, updates<br>with less back and forth</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Test the group flow →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-9','gathergo-awareness-group-chat.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-9','gathergo-awareness-group-chat.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Trust Signal</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact banner-dense" id="banner-awareness-10" style="background: radial-gradient(circle at top right, rgba(15,241,207,0.15), transparent 35%), linear-gradient(180deg, #01082E 0%, #07144C 100%);">
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Trust</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">Confidence matters on both sides of an event</div>
+              <div class="b-headline">Trust the<br>event.<br>Trust the host.</div>
+              <div class="b-desc">GatherGo brings creator setup and verification closer to the event experience so attendees and organizers can move with more confidence.</div>
+              <div class="feature-grid">
+                <div class="feature-grid-card">
+                  <strong>Creator setup</strong>
+                  <span>A clearer path for hosts who are serious about building.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>KYC flow</strong>
+                  <span>Extra trust signals where they matter most.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Safer participation</strong>
+                  <span>Attendees feel the experience is more intentional.</span>
+                </div>
+                <div class="feature-grid-card">
+                  <strong>Better confidence</strong>
+                  <span>Communities engage more easily when trust is visible.</span>
+                </div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">What it signals</div>
+                <div class="bf-covers">More confidence for hosts<br>and the people attending</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Try the trusted flow →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-10','gathergo-awareness-trust.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-10','gathergo-awareness-trust.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Attendee Journey</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-11" style="background: linear-gradient(180deg, #01082E 0%, #031B61 100%);">
+            <div class="bwm" style="font-size: 380px; right: -20px; bottom: -22px;">GO</div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Attendee</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">The next step should never be unclear</div>
+              <div class="b-headline">You found the<br>event.<br>Now what?</div>
+              <div class="b-desc">GatherGo answers that question fast: join, support, move, and stay updated without losing context or leaving the event flow.</div>
+              <div class="banner-chip-row">
+                <div class="banner-chip">Join</div>
+                <div class="banner-chip">Support</div>
+                <div class="banner-chip">Move</div>
+                <div class="banner-chip">Stay updated</div>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">The experience</div>
+                <div class="bf-covers">Clear next actions<br>from discovery to arrival</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Step into the journey →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-11','gathergo-awareness-attendee-journey.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-11','gathergo-awareness-attendee-journey.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-card">
+      <div class="banner-card-label">Awareness · Cause Action</div>
+      <div class="banner-viewport">
+        <div class="banner-scaler">
+          <div class="banner banner-compact" id="banner-awareness-12" style="background: radial-gradient(circle at bottom left, rgba(15,241,207,0.14), transparent 34%), linear-gradient(180deg, #01082E 0%, #04164E 100%);">
+            <div class="dc" style="width:260px;height:260px;background:rgba(15,241,207,0.12);bottom:120px;right:110px;"></div>
+            <div class="bh">
+              <div class="logo-group"><span class="logo-name">GatherGo</span></div>
+              <div class="phase-tag">Cause</div>
+            </div>
+            <div class="bb">
+              <div class="b-eyebrow">For movements that need support and turnout</div>
+              <div class="b-headline">Support the cause.<br>Show up<br>for real.</div>
+              <div class="b-desc">For purpose-led events, GatherGo brings donations and attendance closer together so support does not stop at awareness alone.</div>
+              <div class="quote-panel">
+                <strong>Why it matters</strong>
+                <span>People should be able to back the cause and join the moment from one connected experience.</span>
+              </div>
+            </div>
+            <div class="b-rule"></div>
+            <div class="bf">
+              <div class="bf-left">
+                <div class="bf-label">For purpose-led events</div>
+                <div class="bf-covers">Raise support and turnout<br>in one clearer flow</div>
+              </div>
+              <div class="bf-right">
+                <div class="bf-cta">Back it in the UAT →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dl-bar">
+        <span class="dl-info">1080 × 1080 · PNG</span>
+        <div class="dl-actions">
+          <button class="dl-btn dl-btn-secondary" onclick="downloadBanner('banner-awareness-12','gathergo-awareness-cause-action.png', this)">Download Awareness</button>
+          <button class="dl-btn" onclick="shareBanner('banner-awareness-12','gathergo-awareness-cause-action.png', this)">Share on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-break">
+      <div class="section-break-eyebrow">UAT Rollout</div>
+      <h2>Phase-by-phase banners for the live test</h2>
+      <p>Use these when you want people to know exactly what opens each week, what they should try, and when the next testing window begins.</p>
+    </div>
+
+    <div class="banner-card">
       <div class="banner-card-label">Phase 1 · Onboarding</div>
       <div class="banner-viewport">
         <div class="banner-scaler">
@@ -411,7 +1579,7 @@
             <div class="bwm">1</div>
             <div class="bh">
               <div class="logo-group"><span class="logo-name">GatherGo</span></div>
-              <div class="phase-tag">Apr 19 – Apr 24</div>
+              <div class="phase-tag">Phase 1</div>
             </div>
             <div class="bb">
               <div class="b-eyebrow">Impact-driven Event App</div>
@@ -425,8 +1593,8 @@
                 <div class="bf-covers">Sign-in · Attendee UX<br>Ticketing · Donations</div>
               </div>
               <div class="bf-right">
-                <div class="bf-date">Starts Sunday, Apr 19</div>
-                <div class="bf-cta">Join UAT →</div>
+                <div class="bf-date">Onboarding focus</div>
+                <div class="bf-cta">Start Phase 1 →</div>
               </div>
             </div>
           </div>
@@ -449,7 +1617,7 @@
             <div class="bwm">2</div>
             <div class="bh">
               <div class="logo-group"><span class="logo-name">GatherGo</span></div>
-              <div class="phase-tag">Apr 26 – May 1</div>
+              <div class="phase-tag">Phase 2</div>
             </div>
             <div class="bb">
               <div class="b-eyebrow">Impact-driven Event App</div>
@@ -463,8 +1631,8 @@
                 <div class="bf-covers">Carpool · Chat<br>Notifications</div>
               </div>
               <div class="bf-right">
-                <div class="bf-date">Starts Sunday, Apr 26</div>
-                <div class="bf-cta">Join UAT →</div>
+                <div class="bf-date">Carpool focus</div>
+                <div class="bf-cta">Try Phase 2 →</div>
               </div>
             </div>
           </div>
@@ -487,7 +1655,7 @@
             <div class="bwm">3</div>
             <div class="bh">
               <div class="logo-group"><span class="logo-name">GatherGo</span></div>
-              <div class="phase-tag">May 3 – May 8</div>
+              <div class="phase-tag">Phase 3</div>
             </div>
             <div class="bb">
               <div class="b-eyebrow">Impact-driven Event App</div>
@@ -501,8 +1669,8 @@
                 <div class="bf-covers">Event Creation · KYC<br>Wallet Setup</div>
               </div>
               <div class="bf-right">
-                <div class="bf-date">Starts Sunday, May 3</div>
-                <div class="bf-cta">Join UAT →</div>
+                <div class="bf-date">Creator focus</div>
+                <div class="bf-cta">Open Phase 3 →</div>
               </div>
             </div>
           </div>
@@ -549,9 +1717,21 @@
 
   <script>
     const UAT_SHARE_URL = "https://uat.gathergo.events";
-    const UAT_SHARE_TEXT = `Join the GatherGo UAT: ${UAT_SHARE_URL}`;
+    const UAT_SHARE_TEXT = `Discover GatherGo and join the live rollout: ${UAT_SHARE_URL}`;
     const bannerDownloads = [
       { id: "banner-about", filename: "gathergo-about.png" },
+      { id: "banner-awareness-1", filename: "gathergo-awareness-problem-solution.png" },
+      { id: "banner-awareness-2", filename: "gathergo-awareness-arrive-together.png" },
+      { id: "banner-awareness-3", filename: "gathergo-awareness-impact.png" },
+      { id: "banner-awareness-4", filename: "gathergo-awareness-creator.png" },
+      { id: "banner-awareness-5", filename: "gathergo-awareness-all-in-one.png" },
+      { id: "banner-awareness-6", filename: "gathergo-awareness-fomo.png" },
+      { id: "banner-awareness-7", filename: "gathergo-awareness-link-in-bio.png" },
+      { id: "banner-awareness-8", filename: "gathergo-awareness-event-journey.png" },
+      { id: "banner-awareness-9", filename: "gathergo-awareness-group-chat.png" },
+      { id: "banner-awareness-10", filename: "gathergo-awareness-trust.png" },
+      { id: "banner-awareness-11", filename: "gathergo-awareness-attendee-journey.png" },
+      { id: "banner-awareness-12", filename: "gathergo-awareness-cause-action.png" },
       { id: "banner-1", filename: "gathergo-uat-1.png" },
       { id: "banner-2", filename: "gathergo-uat-2.png" },
       { id: "banner-3", filename: "gathergo-uat-3.png" },
@@ -650,7 +1830,7 @@
         const blob = await renderBannerBlob(bannerId);
         const file = new File([blob], filename, { type: "image/png" });
         const shareData = {
-          title: "GatherGo UAT",
+          title: "GatherGo",
           text: UAT_SHARE_TEXT,
           url: UAT_SHARE_URL
         };
